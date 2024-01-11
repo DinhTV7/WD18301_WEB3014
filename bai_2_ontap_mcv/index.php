@@ -12,6 +12,10 @@ switch ($url) {
         require_once 'Controllers/CustomerController.php';
         echo addCustomer();
         break;
+    case 'edit_customer':
+        require_once 'Controllers/CustomerController.php';
+        echo editCustomer();
+        break;
 }
 
 // Tạo 1 url mới add-customer để 

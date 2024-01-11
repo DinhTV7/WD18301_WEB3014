@@ -14,6 +14,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
+            <th>Action</th>
         </thead>
         <tbody>
             <?php foreach ($customers as $customer): ?>
@@ -22,6 +23,7 @@
                     <td><?= $customer['name'] ?></td>
                     <td><?= $customer['email'] ?></td>
                     <td><?= $customer['phone'] ?></td>
+                    <td><a href="?url=edit_customer&id=<?= $customer['id'] ?>">Edit</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>
