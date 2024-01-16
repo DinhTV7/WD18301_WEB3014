@@ -23,7 +23,7 @@
                     <td><?= $customer['name'] ?></td>
                     <td><?= $customer['email'] ?></td>
                     <td><?= $customer['phone'] ?></td>
-                    <td><a href="?url=edit_customer&id=<?= $customer['id'] ?>">Edit</a></td>
+                    <td><a href="?url=detail_customer&id=<?= $customer['id'] ?>">Edit</a></td>
                 </tr>
             <?php endforeach; ?>
         </tbody>

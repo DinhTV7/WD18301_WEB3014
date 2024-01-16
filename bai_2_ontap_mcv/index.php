@@ -2,19 +2,21 @@
 // file index giúp điều hướng tới các hàm ở trong controller
 $url = isset($_GET['url']) == true ? $_GET['url'] : "/";
 // $url = $_GET['url'];
+require_once 'Controllers/CustomerController.php';
+$customerController = new CustomerController();
 
 switch ($url) {
     case '/':
-        require_once 'Controllers/CustomerController.php';
-        echo listCustomer();
+        echo $customerController->listCustomer();
         break;
     case 'add-customer':
-        require_once 'Controllers/CustomerController.php';
-        echo addCustomer();
+        echo $customerController->addCustomer();
+        break;
+    case 'detail_customer':
+        echo $customerController->detailCustomer();
         break;
     case 'edit_customer':
-        require_once 'Controllers/CustomerController.php';
-        echo editCustomer();
+        echo $customerController->editCustomer();
         break;
 }
 
