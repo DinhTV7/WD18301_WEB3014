@@ -1,0 +1,22 @@
+{
+    "name": "dinhtv7/hoc_autoload",
+    "description": "Hoc autoload php",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Bai5\\": "./",
+            "App\\": ["app/", "helpers/"]
+        },
+        "files": [
+            "helpers/function.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "dinhtv7"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9.1"
+    }
+}
