@@ -1,5 +1,5 @@
 <?php
-namespace App\Models\CustomerModel;
+namespace App\Models;
 class Customer
 {
     public function __construct()

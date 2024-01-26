@@ -2,7 +2,7 @@
 namespace App\Controllers;
 
 require "App/models/Product.php";
-use App\Models\ProductModel\Product;
+use App\Models\Product;
 use DateTime;
 
 class ProductController

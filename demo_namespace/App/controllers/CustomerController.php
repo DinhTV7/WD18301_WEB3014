@@ -2,7 +2,7 @@
 namespace App\Controllers;
 
 require "App/models/Customer.php";
-use App\Models\CustomerModel\Customer;
+use App\Models\Customer;
 
 class CustomerController
 {
