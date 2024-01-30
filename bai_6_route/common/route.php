@@ -1,5 +1,6 @@
 <?php
 
+use App\Controllers\CustomerController;
 use App\Controllers\ProductController;
 use Phroute\Phroute\RouteCollector;
 use Phroute\Phroute\Dispatcher;
@@ -25,7 +26,14 @@ $router->get('/', function () {
 });
 
 $router->get('list-product', [ProductController::class, 'index']);
-$router->get('detail-product/{id}', [ProductController::class, 'detail']);
+
+// Nhóm các route
+$router->group(['prefix' => 'product'], function($router) {
+    // Định nghĩa các route trong group
+    $router->get('detail-product/{id}', [ProductController::class, 'detail']);
+});
+
+$router->get('list-customer', [CustomerController::class, 'index']);
 
 // khu vực cần quan tâm -----------
 
