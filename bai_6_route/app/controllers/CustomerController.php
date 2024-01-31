@@ -45,7 +45,7 @@ class CustomerController extends BaseController
             $name = $_POST['name'];
             $email = $_POST['email'];
             $phone = $_POST['phone'];
-            return $this->customer->addCustomer(Null, $name, $email, $phone);
+            $this->customer->addCustomer(Null, $name, $email, $phone);
         }
     }
 }

@@ -10,7 +10,7 @@ class Customer extends BaseModel
     {
         $sql = "SELECT * FROM $this->table";
         $this->setQuery($sql);
-        $this->loadAllRows();
+        return $this->loadAllRows();
     }
 
     // Thêm thông tin khách hàng
@@ -18,6 +18,6 @@ class Customer extends BaseModel
     {
         $sql = "INSERT INTO $this->table VALUES (?,?,?,?)";
         $this->setQuery($sql);
-        $this->execute([$id, $name, $email, $phone]);
+        return $this->execute([$id, $name, $email, $phone]);
     }
 }
