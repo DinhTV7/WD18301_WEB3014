@@ -34,6 +34,8 @@ $router->group(['prefix' => 'product'], function($router) {
 });
 
 $router->get('list-customer', [CustomerController::class, 'index']);
+$router->get('add-customer', [CustomerController::class, 'addCustomer']);
+$router->post('create-customer', [CustomerController::class, 'createCustomer']);
 
 // khu vực cần quan tâm -----------
 

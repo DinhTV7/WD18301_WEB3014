@@ -10,3 +10,9 @@ const DBNAME = "php2_wd18301";
 const DBCHARSET = "utf8";
 const DBUSER = "root";
 const DBPASS = "";
+
+// Thực hiện việc chuyển trang đến router yêu cầu
+function route($url) 
+{
+    return BASE_URL . $url;
+}
